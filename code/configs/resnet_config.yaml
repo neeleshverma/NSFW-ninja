@@ -1,0 +1,31 @@
+# Dataset
+train_dir: /home/neelesh/research-project-security-sheriffs/dataset/train
+val_dir: /home/neelesh/research-project-security-sheriffs/dataset/val
+test_dir: /home/neelesh/research-project-security-sheriffs/dataset/test
+
+# Model
+base: resnet
+model: resnet101
+batch_size: 128
+epochs: 100
+lr: 0.01
+momentum: 0.9
+weight_decay: 0.0001
+lr_gamma: 0.1
+optim_milestones: [20, 40, 80]
+gpus: [0,1,2]
+
+# Opt
+num_workers: 16
+pin_memory: True
+
+# Debug
+print_freq: 1
+eval_freq: 10
+checkpoints: checkpoints/{model}
+resume: False
+test_only: False
+
+#For test only
+model_path: checkpoints/{model}/model_90.pth
+logfile: CandW/cw_resnet.txt

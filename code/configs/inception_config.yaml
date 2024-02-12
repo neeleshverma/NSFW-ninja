@@ -1,0 +1,31 @@
+# Dataset
+train_dir: /home/neelesh/research-project-security-sheriffs/dataset/train
+val_dir: /home/neelesh/research-project-security-sheriffs/dataset/val
+test_dir: /home/neelesh/research-project-security-sheriffs/dataset/test
+
+# Model
+base: inception
+model: inception_v3
+batch_size: 128
+epochs: 100
+lr: 0.001
+momentum: 0.9
+weight_decay: 0.0001
+lr_gamma: 0.1
+optim_milestones: [20, 40, 80]
+gpus: [0,1,2]
+
+# Opt
+num_workers: 16
+pin_memory: True
+
+# Debug
+print_freq: 1
+eval_freq: 5
+checkpoints: checkpoints/inception_v3
+resume: False
+model_path:
+test_only: False
+
+#For test only
+model_path: checkpoints/inception_v3/model_95.pth
