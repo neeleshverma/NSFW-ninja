@@ -62,38 +62,46 @@ def pgdAttack(config, num_images):
     normal_acc = 0
     adv_acc = 0
     asr = 0
+    total_images = 0
 
     # PGD attack
-    attack = ProjectedGradientDescentPyTorch(estimator=classifier, eps=0.2)
-
+    attack = ProjectedGradientDescentPyTorch(estimator=classifier, eps=8/255, norm="inf")
+    l_inf_max = 0
 
     for i, (image, target) in tqdm(enumerate(test_data_loader)):
-        x_test = image.clone().numpy()
-        target = target.type(torch.float)
+        if total_images < num_images:
+            total_images += target.shape[0]
+            x_test = image.clone().numpy()
+            target = target.type(torch.float)
 
-        ### Normal output
-        normal_outputs = classifier.predict(x_test)
-        normal_outputs = torch.from_numpy(normal_outputs).squeeze()
-        normal_preds = torch.round(torch.sigmoid(normal_outputs))
-        normal_acc += torch.sum(normal_preds == target)
+            ### Normal output
+            normal_outputs = classifier.predict(x_test)
+            normal_outputs = torch.from_numpy(normal_outputs).squeeze()
+            normal_preds = torch.round(torch.sigmoid(normal_outputs))
+            normal_acc += torch.sum(normal_preds == target)
 
-        ### Adversarial generation and output
-        x_test_adv = attack.generate(x=x_test)
-        adv_outputs = classifier.predict(x_test_adv)
-        adv_outputs = torch.from_numpy(adv_outputs).squeeze()
-        adv_preds = torch.round(torch.sigmoid(adv_outputs))
-        adv_acc += torch.sum(adv_preds == target)
+            ### Adversarial generation and output
+            x_test_adv = attack.generate(x=x_test)
+            adv_outputs = classifier.predict(x_test_adv)
+            adv_outputs = torch.from_numpy(adv_outputs).squeeze()
+            adv_preds = torch.round(torch.sigmoid(adv_outputs))
+            adv_acc += torch.sum(adv_preds == target)
 
-        print(normal_preds.shape)
-        print(adv_preds.shape)
-        print(type(normal_acc))
-        print(type(adv_acc))
+            l_inf_max = max(l_inf_max, np.max(np.abs(x_test - x_test_adv)))
+            print(l_inf_max)
 
-        asr += torch.sum(normal_preds != adv_preds)
+            asr += torch.sum(normal_preds != adv_preds)
 
-    print("Normal acc : {}".format(normal_acc * 100.0 / (test_data_loader.dataset)))
-    print("Adv acc : {}".format(adv_acc * 100.0 / (test_data_loader.dataset)))
-    print("Attack Success Rate : {}".format(asr * 100.0 / (test_data_loader.dataset)))
+    ### Logging
+    log = "Model : {}\n".format(config['model'])
+    log += "Normal acc : {}\n".format(normal_acc * 100.0 / total_images)
+    log += "Adversarial acc : {}\n".format(adv_acc * 100.0 / total_images)
+    log += "Attack Success Rate : {}\n".format(asr * 100.0 / total_images)
+    log += "L-inf Norm Max : {}\n".format(l_inf_max)
+    log += "--------------------------------------------------------------\n\n"
+    log_file = open(config['logfile'], "a")
+    log_file.write(log)
+    log_file.close()
 
 
 
