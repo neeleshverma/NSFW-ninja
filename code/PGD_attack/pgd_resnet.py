@@ -17,13 +17,10 @@ parent = os.path.dirname(current)
 sys.path.append(parent)
 import utils.classifier_utils as classifier_utils
 
-
-resnet_weights = {'resnet18':ResNet18_Weights, 'resnet34':ResNet34_Weights, 'resnet50':ResNet50_Weights, 'resnet101':ResNet101_Weights}
 devices = None
 
-
 def getResnetModel(modelpath, modeltype):
-    model = torchvision.models.__dict__[modeltype](weights=resnet_weights[modeltype].IMAGENET1K_V1)
+    model = torchvision.models.__dict__[modeltype](weights=None)
     num_ftrs = model.fc.in_features
     model.fc = nn.Linear(num_ftrs, 1)
     model.to(devices[0])
@@ -108,6 +105,8 @@ def pgdAttack(config, num_images):
 if __name__ == "__main__":
     with open('configs/resnet_config.yaml') as f:
         config = yaml.safe_load(f)
+
+    config['model'] = sys.argv[1]
 
     config['model_path'] = config['model_path'].format(model=config['model'])
     config['checkpoints'] = config['checkpoints'].format(model=config['model'])
