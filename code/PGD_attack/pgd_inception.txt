@@ -1,0 +1,13 @@
+Model : inception_v3
+Normal acc : 99.90234375
+Adversarial acc : 48.33984375
+Attack Success Rate : 51.7578125
+L-inf Norm Max : 0.031372666358947754
+--------------------------------------------------------------
+
+Model : inception_v3
+Normal acc : 99.910490625
+Adversarial acc : 47.4140625
+Attack Success Rate : 52.30078125
+L-inf Norm Max : 0.03137260675430298
+--------------------------------------------------------------

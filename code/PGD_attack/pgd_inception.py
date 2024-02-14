@@ -17,12 +17,10 @@ parent = os.path.dirname(current)
 sys.path.append(parent)
 import utils.classifier_utils as classifier_utils
 
-
 devices = None
 
-
 def getInceptionModel(modelpath, modeltype):
-    model = torchvision.models.__dict__[modeltype](weights=Inception_V3_Weights.IMAGENET1K_V1)
+    model = torchvision.models.__dict__[modeltype](weights=None)
     num_ftrs = model.fc.in_features
     classifier = nn.Sequential(
         nn.Linear(num_ftrs, 256),
