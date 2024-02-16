@@ -101,9 +101,8 @@ def pgdAttack(config, num_images):
     log_file.close()
 
 
-
 if __name__ == "__main__":
-    with open('configs/resnet_config.yaml') as f:
+    with open('Cats_Dogs/resnet_config.yaml') as f:
         config = yaml.safe_load(f)
 
     config['model'] = sys.argv[1]

@@ -20,7 +20,7 @@ import utils.classifier_utils as classifier_utils
 devices = None
 
 def getViTModel(modelpath, modeltype):
-    model = torchvision.models.__dict__[modeltype](weights=ViT_B_16_Weights.IMAGENET1K_V1)
+    model = torchvision.models.__dict__[modeltype](weights=None)
     num_ftrs = model.heads.head.in_features
     model.heads = nn.Linear(num_ftrs, 1)
     model.to(devices[0])
