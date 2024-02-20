@@ -7,7 +7,6 @@ import yaml
 from tqdm import tqdm
 
 import torchvision
-from torchvision.models import ResNet18_Weights, ResNet34_Weights, ResNet50_Weights, ResNet101_Weights
 import torchattacks
 
 ##### Import utils from parent directory
@@ -16,13 +15,11 @@ parent = os.path.dirname(current)
 sys.path.append(parent)
 import utils.classifier_utils as classifier_utils
 
-
-resnet_weights = {'resnet18':ResNet18_Weights, 'resnet34':ResNet34_Weights, 'resnet50':ResNet50_Weights, 'resnet101':ResNet101_Weights}
 devices = None
 
 
 def getResnetModel(modelpath, modeltype):
-    model = torchvision.models.__dict__[modeltype](weights=resnet_weights[modeltype].IMAGENET1K_V1)
+    model = torchvision.models.__dict__[modeltype](weights=None)
     num_ftrs = model.fc.in_features
     model.fc = nn.Linear(num_ftrs, 1)
     model.to(devices[0])
@@ -95,9 +92,9 @@ def cwAttack(config, num_images):
     adv_acc = 0
     total_images = 0
     asr = 0
+    max_l2_norm = 0
 
     # C and W L2 attack
-    attack = torchattacks.CW(model, c=0.5, kappa=0, steps=50, lr=0.01)
 
     for i, (images, targets) in tqdm(enumerate(test_data_loader)):
         if total_images < num_images:
@@ -105,6 +102,9 @@ def cwAttack(config, num_images):
 
             adv_images = cw_l2_attack(model, images, targets, targeted=False, c=0.1)
             normal_images, targets = images.to(devices[0]), targets.to(devices[0])
+
+            l2_norm = torch.max(torch.norm(normal_images - adv_images, p=2, dim=(1,2,3))).item()
+            max_l2_norm = max(l2_norm, max_l2_norm)
 
             adv_outputs = model(adv_images)
             adv_outputs = adv_outputs.squeeze()
@@ -124,6 +124,7 @@ def cwAttack(config, num_images):
     log += "Normal acc : {}\n".format(normal_acc * 100.0 / total_images)
     log += "Adversarial acc : {}\n".format(adv_acc * 100.0 / total_images)
     log += "Attack Success Rate : {}\n".format(asr * 100.0 / total_images)
+    log += "Maximum L2 Norm : {}\n".format(max_l2_norm)
     log += "--------------------------------------------------------------\n\n"
     log_file = open(config['logfile'], "a")
     log_file.write(log)
@@ -135,6 +136,7 @@ if __name__ == "__main__":
     with open('configs/resnet_config.yaml') as f:
         config = yaml.safe_load(f)
 
+    config['model'] = sys.argv[1]
     config['model_path'] = config['model_path'].format(model=config['model'])
     config['checkpoints'] = config['checkpoints'].format(model=config['model'])
 

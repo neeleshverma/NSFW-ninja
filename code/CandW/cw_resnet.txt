@@ -1,0 +1,52 @@
+Model : resnet34
+Normal acc : 99.90234375
+Adversarial acc : 22.265625
+Attack Success Rate : 77.63671875
+--------------------------------------------------------------
+
+Model : resnet18
+Normal acc : 100.0
+Adversarial acc : 46.484375
+Attack Success Rate : 53.515625
+--------------------------------------------------------------
+
+Model : resnet50
+Normal acc : 100.0
+Adversarial acc : 9.47265625
+Attack Success Rate : 90.52734375
+--------------------------------------------------------------
+
+Model : resnet101
+Normal acc : 100.0
+Adversarial acc : 10.3515625
+Attack Success Rate : 89.6484375
+--------------------------------------------------------------
+
+Model : resnet18
+Normal acc : 99.8046875
+Adversarial acc : 16.50390625
+Attack Success Rate : 83.30078125
+Maximum L2 Norm : 10.441710472106934
+--------------------------------------------------------------
+
+Model : resnet34
+Normal acc : 99.70703125
+Adversarial acc : 14.16015625
+Attack Success Rate : 85.83984375
+Maximum L2 Norm : 10.966931343078613
+--------------------------------------------------------------
+
+Model : resnet50
+Normal acc : 99.21875
+Adversarial acc : 12.3046875
+Attack Success Rate : 86.9140625
+Maximum L2 Norm : 11.466540336608887
+--------------------------------------------------------------
+
+Model : resnet101
+Normal acc : 99.31640625
+Adversarial acc : 13.96484375
+Attack Success Rate : 85.3515625
+Maximum L2 Norm : 17.62837791442871
+--------------------------------------------------------------
+
