@@ -1,0 +1,12 @@
+Model : vit_b_16
+Normal acc : 99.90234375
+Adversarial acc : 13.37890625
+Attack Success Rate : 86.5234375
+--------------------------------------------------------------
+
+Model : vit_b_16
+Normal acc : 99.0234375
+Adversarial acc : 7.32421875
+Attack Success Rate : 91.69921875
+Maximum L2 Norm : 10.149947166442871
+--------------------------------------------------------------
