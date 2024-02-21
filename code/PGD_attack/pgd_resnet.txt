@@ -1,0 +1,27 @@
+Model : resnet18
+Normal acc : 99.90234375
+Adversarial acc : 51.26953125
+Attack Success Rate : 48.6328125
+L-inf Norm Max : 0.03137260675430298
+--------------------------------------------------------------
+
+Model : resnet34
+Normal acc : 99.70703125
+Adversarial acc : 48.046875
+Attack Success Rate : 51.85546875
+L-inf Norm Max : 0.03137260675430298
+--------------------------------------------------------------
+
+Model : resnet50
+Normal acc : 99.4140625
+Adversarial acc : 46.97265625
+Attack Success Rate : 52.44140625
+L-inf Norm Max : 0.03137260675430298
+--------------------------------------------------------------
+
+Model : resnet101
+Normal acc : 99.21875
+Adversarial acc : 49.8046875
+Attack Success Rate : 49.4140625
+L-inf Norm Max : 0.03137260675430298
+--------------------------------------------------------------

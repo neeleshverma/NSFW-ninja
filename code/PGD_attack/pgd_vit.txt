@@ -1,0 +1,13 @@
+Model : vit_b_16
+Normal acc : 99.8046875
+Adversarial acc : 50.29296875
+Attack Success Rate : 49.90234375
+L-inf Norm Max : 0.03137260675430298
+--------------------------------------------------------------
+
+Model : vit_b_16
+Normal acc : 98.828125
+Adversarial acc : 46.97265625
+Attack Success Rate : 53.61328125
+L-inf Norm Max : 0.03137260675430298
+--------------------------------------------------------------
