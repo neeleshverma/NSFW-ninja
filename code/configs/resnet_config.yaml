@@ -5,7 +5,8 @@ test_dir: /home/neelesh/research-project-security-sheriffs/dataset/test
 
 # Model
 base: resnet
-model: resnet101
+# model: resnet101
+model: {model}
 batch_size: 128
 epochs: 100
 lr: 0.01
@@ -21,11 +22,12 @@ pin_memory: True
 
 # Debug
 print_freq: 1
-eval_freq: 10
+eval_freq: 5
 checkpoints: checkpoints/{model}
+plots: plots/{model}
 resume: False
 test_only: False
 
 #For test only
-model_path: checkpoints/{model}/model_90.pth
+model_path: checkpoints/{model}/model_100.pth
 logfile: CandW/cw_resnet.txt

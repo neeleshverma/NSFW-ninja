@@ -22,10 +22,11 @@ pin_memory: True
 # Debug
 print_freq: 1
 eval_freq: 5
-checkpoints: checkpoints/{model}
+checkpoints: checkpoints/vit_b_16
+plots: plots/vit_b_16
 resume: False
-model_path:
 test_only: False
 
 #For test only
-model_path: checkpoints/{model}/model_95.pth
+model_path: checkpoints/vit_b_16/model_100.pth
+logfile: CandW/cw_vit.txt
