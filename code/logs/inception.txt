@@ -1,0 +1,181 @@
+############# TRAINING ################
+Epoch : 1   Training Accuracy : 0.5693827867507935
+Epoch : 2   Training Accuracy : 0.866819441318512
+Epoch : 3   Training Accuracy : 0.9253425002098083
+Epoch : 4   Training Accuracy : 0.9382309317588806
+Epoch : 5   Training Accuracy : 0.9525036811828613
+Epoch : 5   Validation Accuracy : 0.9688812494277954
+Epoch : 5   Validation Accuracy : 0.5084006786346436
+Saving the model at checkpoints/inception_v3
+
+Epoch : 6   Training Accuracy : 0.9522172808647156
+Epoch : 7   Training Accuracy : 0.9573249220848083
+Epoch : 8   Training Accuracy : 0.9615256190299988
+Epoch : 9   Training Accuracy : 0.965201199054718
+Epoch : 10   Training Accuracy : 0.9667287468910217
+Epoch : 10   Validation Accuracy : 0.9768995642662048
+Epoch : 10   Validation Accuracy : 0.6154289841651917
+Saving the model at checkpoints/inception_v3
+
+Epoch : 11   Training Accuracy : 0.9713590145111084
+Epoch : 12   Training Accuracy : 0.9716931581497192
+Epoch : 13   Training Accuracy : 0.9737457633018494
+Epoch : 14   Training Accuracy : 0.9758461117744446
+Epoch : 15   Training Accuracy : 0.9769440293312073
+Epoch : 15   Validation Accuracy : 0.9757540822029114
+Epoch : 15   Validation Accuracy : 0.6259458661079407
+Saving the model at checkpoints/inception_v3
+
+Epoch : 16   Training Accuracy : 0.9767530560493469
+Epoch : 17   Training Accuracy : 0.9778032302856445
+Epoch : 18   Training Accuracy : 0.9793784618377686
+Epoch : 19   Training Accuracy : 0.9785670042037964
+Epoch : 20   Training Accuracy : 0.9793784618377686
+Epoch : 20   Validation Accuracy : 0.9537991881370544
+Epoch : 20   Validation Accuracy : 0.3512248396873474
+Saving the model at checkpoints/inception_v3
+
+Epoch : 21   Training Accuracy : 0.9814310669898987
+Epoch : 22   Training Accuracy : 0.9841042757034302
+Epoch : 23   Training Accuracy : 0.9828153848648071
+Epoch : 24   Training Accuracy : 0.9836746454238892
+Epoch : 25   Training Accuracy : 0.9846770763397217
+Epoch : 25   Validation Accuracy : 0.9839633703231812
+Epoch : 25   Validation Accuracy : 0.5163524150848389
+Saving the model at checkpoints/inception_v3
+
+Epoch : 26   Training Accuracy : 0.9850589632987976
+Epoch : 27   Training Accuracy : 0.9854408502578735
+Epoch : 28   Training Accuracy : 0.9851544499397278
+Epoch : 29   Training Accuracy : 0.9854885935783386
+Epoch : 30   Training Accuracy : 0.9862523078918457
+Epoch : 30   Validation Accuracy : 0.9852997064590454
+Epoch : 30   Validation Accuracy : 0.5957419276237488
+Saving the model at checkpoints/inception_v3
+
+Epoch : 31   Training Accuracy : 0.9864910244941711
+Epoch : 32   Training Accuracy : 0.9865864515304565
+Epoch : 33   Training Accuracy : 0.984438419342041
+Epoch : 34   Training Accuracy : 0.9851067066192627
+Epoch : 35   Training Accuracy : 0.986443281173706
+Epoch : 35   Validation Accuracy : 0.9885452389717102
+Epoch : 35   Validation Accuracy : 0.6338976621627808
+Saving the model at checkpoints/inception_v3
+
+Epoch : 36   Training Accuracy : 0.9869205951690674
+Epoch : 37   Training Accuracy : 0.9876366257667542
+Epoch : 38   Training Accuracy : 0.9867296814918518
+Epoch : 39   Training Accuracy : 0.9866341948509216
+Epoch : 40   Training Accuracy : 0.9866819381713867
+Epoch : 40   Validation Accuracy : 0.9858724474906921
+Epoch : 40   Validation Accuracy : 0.5872771739959717
+Saving the model at checkpoints/inception_v3
+
+Epoch : 41   Training Accuracy : 0.9869205951690674
+Epoch : 42   Training Accuracy : 0.9876843690872192
+Epoch : 43   Training Accuracy : 0.9870638251304626
+Epoch : 44   Training Accuracy : 0.9873024821281433
+Epoch : 45   Training Accuracy : 0.9871115684509277
+Epoch : 45   Validation Accuracy : 0.9875906705856323
+Epoch : 45   Validation Accuracy : 0.6031165719032288
+Saving the model at checkpoints/inception_v3
+
+Epoch : 46   Training Accuracy : 0.9866819381713867
+Epoch : 47   Training Accuracy : 0.9874457120895386
+Epoch : 48   Training Accuracy : 0.987970769405365
+Epoch : 49   Training Accuracy : 0.9867774248123169
+Epoch : 50   Training Accuracy : 0.9868729114532471
+Epoch : 50   Validation Accuracy : 0.9875906705856323
+Epoch : 50   Validation Accuracy : 0.5974733829498291
+Saving the model at checkpoints/inception_v3
+
+Epoch : 51   Training Accuracy : 0.9863000512123108
+Epoch : 52   Training Accuracy : 0.9867296814918518
+Epoch : 53   Training Accuracy : 0.9878275990486145
+Epoch : 54   Training Accuracy : 0.9873979687690735
+Epoch : 55   Training Accuracy : 0.9881617426872253
+Epoch : 55   Validation Accuracy : 0.9894998073577881
+Epoch : 55   Validation Accuracy : 0.5940746665000916
+Saving the model at checkpoints/inception_v3
+
+Epoch : 56   Training Accuracy : 0.986825168132782
+Epoch : 57   Training Accuracy : 0.9882571697235107
+Epoch : 58   Training Accuracy : 0.9882094860076904
+Epoch : 59   Training Accuracy : 0.9872070550918579
+Epoch : 60   Training Accuracy : 0.9865864515304565
+Epoch : 60   Validation Accuracy : 0.9883543252944946
+Epoch : 60   Validation Accuracy : 0.5980505347251892
+Saving the model at checkpoints/inception_v3
+
+Epoch : 61   Training Accuracy : 0.9875888824462891
+Epoch : 62   Training Accuracy : 0.986395537853241
+Epoch : 63   Training Accuracy : 0.9880662560462952
+Epoch : 64   Training Accuracy : 0.9866819381713867
+Epoch : 65   Training Accuracy : 0.9881139993667603
+Epoch : 65   Validation Accuracy : 0.9883543252944946
+Epoch : 65   Validation Accuracy : 0.6253045797348022
+Saving the model at checkpoints/inception_v3
+
+Epoch : 66   Training Accuracy : 0.9872547388076782
+Epoch : 67   Training Accuracy : 0.9872070550918579
+Epoch : 68   Training Accuracy : 0.9876843690872192
+Epoch : 69   Training Accuracy : 0.9875411987304688
+Epoch : 70   Training Accuracy : 0.9878753423690796
+Epoch : 70   Validation Accuracy : 0.9894998073577881
+Epoch : 70   Validation Accuracy : 0.5960626006126404
+Saving the model at checkpoints/inception_v3
+
+Epoch : 71   Training Accuracy : 0.9870638251304626
+Epoch : 72   Training Accuracy : 0.9873979687690735
+Epoch : 73   Training Accuracy : 0.9885913133621216
+Epoch : 74   Training Accuracy : 0.9866341948509216
+Epoch : 75   Training Accuracy : 0.9870638251304626
+Epoch : 75   Validation Accuracy : 0.98682701587677
+Epoch : 75   Validation Accuracy : 0.6277414560317993
+Saving the model at checkpoints/inception_v3
+
+Epoch : 76   Training Accuracy : 0.9868729114532471
+Epoch : 77   Training Accuracy : 0.9880185127258301
+Epoch : 78   Training Accuracy : 0.9870160818099976
+Epoch : 79   Training Accuracy : 0.9884481430053711
+Epoch : 80   Training Accuracy : 0.9873979687690735
+Epoch : 80   Validation Accuracy : 0.9862542748451233
+Epoch : 80   Validation Accuracy : 0.6401821374893188
+Saving the model at checkpoints/inception_v3
+
+Epoch : 81   Training Accuracy : 0.9875888824462891
+Epoch : 82   Training Accuracy : 0.9886868000030518
+Epoch : 83   Training Accuracy : 0.9872547388076782
+Epoch : 84   Training Accuracy : 0.9879230260848999
+Epoch : 85   Training Accuracy : 0.9876366257667542
+Epoch : 85   Validation Accuracy : 0.9875906705856323
+Epoch : 85   Validation Accuracy : 0.611453115940094
+Saving the model at checkpoints/inception_v3
+
+Epoch : 86   Training Accuracy : 0.9873024821281433
+Epoch : 87   Training Accuracy : 0.9874457120895386
+Epoch : 88   Training Accuracy : 0.9881139993667603
+Epoch : 89   Training Accuracy : 0.987970769405365
+Epoch : 90   Training Accuracy : 0.9886868000030518
+Epoch : 90   Validation Accuracy : 0.9879724979400635
+Epoch : 90   Validation Accuracy : 0.6337693929672241
+Saving the model at checkpoints/inception_v3
+
+Epoch : 91   Training Accuracy : 0.9883526563644409
+Epoch : 92   Training Accuracy : 0.9889254570007324
+Epoch : 93   Training Accuracy : 0.9871115684509277
+Epoch : 94   Training Accuracy : 0.987970769405365
+Epoch : 95   Training Accuracy : 0.9890209436416626
+Epoch : 95   Validation Accuracy : 0.9889270663261414
+Epoch : 95   Validation Accuracy : 0.6229960322380066
+Saving the model at checkpoints/inception_v3
+
+Epoch : 96   Training Accuracy : 0.9872547388076782
+Epoch : 97   Training Accuracy : 0.9894983172416687
+Epoch : 98   Training Accuracy : 0.9873502254486084
+Epoch : 99   Training Accuracy : 0.9887822866439819
+Epoch : 100   Training Accuracy : 0.9882571697235107
+Epoch : 100   Validation Accuracy : 0.9862542748451233
+Epoch : 100   Validation Accuracy : 0.6358214616775513
+Saving the model at checkpoints/inception_v3
+

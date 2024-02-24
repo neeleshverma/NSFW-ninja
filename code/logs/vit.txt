@@ -1,0 +1,181 @@
+############# TRAINING ################
+Epoch : 1   Training Accuracy : 0.8991837501525879
+Epoch : 2   Training Accuracy : 0.9247219562530518
+Epoch : 3   Training Accuracy : 0.9297341108322144
+Epoch : 4   Training Accuracy : 0.9368466138839722
+Epoch : 5   Training Accuracy : 0.9392811059951782
+Epoch : 5   Validation Accuracy : 0.9536082744598389
+Epoch : 5   Validation Accuracy : 0.9572912454605103
+Saving the model at checkpoints/vit_b_16
+
+Epoch : 6   Training Accuracy : 0.9525036811828613
+Epoch : 7   Training Accuracy : 0.9634349942207336
+Epoch : 8   Training Accuracy : 0.9659172296524048
+Epoch : 9   Training Accuracy : 0.9702610969543457
+Epoch : 10   Training Accuracy : 0.9717886447906494
+Epoch : 10   Validation Accuracy : 0.9730813503265381
+Epoch : 10   Validation Accuracy : 0.9613953828811646
+Saving the model at checkpoints/vit_b_16
+
+Epoch : 11   Training Accuracy : 0.9764666557312012
+Epoch : 12   Training Accuracy : 0.9771349430084229
+Epoch : 13   Training Accuracy : 0.9778987169265747
+Epoch : 14   Training Accuracy : 0.9759415984153748
+Epoch : 15   Training Accuracy : 0.9772781729698181
+Epoch : 15   Validation Accuracy : 0.9795723557472229
+Epoch : 15   Validation Accuracy : 0.9807618260383606
+Saving the model at checkpoints/vit_b_16
+
+Epoch : 16   Training Accuracy : 0.9813833832740784
+Epoch : 17   Training Accuracy : 0.9822425842285156
+Epoch : 18   Training Accuracy : 0.9805241227149963
+Epoch : 19   Training Accuracy : 0.9842474460601807
+Epoch : 20   Training Accuracy : 0.9837223887443542
+Epoch : 20   Validation Accuracy : 0.9841542840003967
+Epoch : 20   Validation Accuracy : 0.9840323328971863
+Saving the model at checkpoints/vit_b_16
+
+Epoch : 21   Training Accuracy : 0.9885913133621216
+Epoch : 22   Training Accuracy : 0.9889254570007324
+Epoch : 23   Training Accuracy : 0.9895460605621338
+Epoch : 24   Training Accuracy : 0.989211916923523
+Epoch : 25   Training Accuracy : 0.9896892309188843
+Epoch : 25   Validation Accuracy : 0.9885452389717102
+Epoch : 25   Validation Accuracy : 0.98563551902771
+Saving the model at checkpoints/vit_b_16
+
+Epoch : 26   Training Accuracy : 0.9885436296463013
+Epoch : 27   Training Accuracy : 0.9897369742393494
+Epoch : 28   Training Accuracy : 0.9901188611984253
+Epoch : 29   Training Accuracy : 0.9903097748756409
+Epoch : 30   Training Accuracy : 0.9898324608802795
+Epoch : 30   Validation Accuracy : 0.9883543252944946
+Epoch : 30   Validation Accuracy : 0.9865332841873169
+Saving the model at checkpoints/vit_b_16
+
+Epoch : 31   Training Accuracy : 0.990357518196106
+Epoch : 32   Training Accuracy : 0.9906439185142517
+Epoch : 33   Training Accuracy : 0.98997563123703
+Epoch : 34   Training Accuracy : 0.9899279475212097
+Epoch : 35   Training Accuracy : 0.9909780621528625
+Epoch : 35   Validation Accuracy : 0.9887361526489258
+Epoch : 35   Validation Accuracy : 0.9831986427307129
+Saving the model at checkpoints/vit_b_16
+
+Epoch : 36   Training Accuracy : 0.9900711178779602
+Epoch : 37   Training Accuracy : 0.9901666045188904
+Epoch : 38   Training Accuracy : 0.9906916618347168
+Epoch : 39   Training Accuracy : 0.991216778755188
+Epoch : 40   Training Accuracy : 0.9913599491119385
+Epoch : 40   Validation Accuracy : 0.9896907210350037
+Epoch : 40   Validation Accuracy : 0.9876234531402588
+Saving the model at checkpoints/vit_b_16
+
+Epoch : 41   Training Accuracy : 0.990357518196106
+Epoch : 42   Training Accuracy : 0.9918373227119446
+Epoch : 43   Training Accuracy : 0.9914554357528687
+Epoch : 44   Training Accuracy : 0.9914554357528687
+Epoch : 45   Training Accuracy : 0.991646409034729
+Epoch : 45   Validation Accuracy : 0.9891179800033569
+Epoch : 45   Validation Accuracy : 0.9876875877380371
+Saving the model at checkpoints/vit_b_16
+
+Epoch : 46   Training Accuracy : 0.9921237230300903
+Epoch : 47   Training Accuracy : 0.9918850660324097
+Epoch : 48   Training Accuracy : 0.9914554357528687
+Epoch : 49   Training Accuracy : 0.9920282363891602
+Epoch : 50   Training Accuracy : 0.9911690354347229
+Epoch : 50   Validation Accuracy : 0.990454375743866
+Epoch : 50   Validation Accuracy : 0.9867897629737854
+Saving the model at checkpoints/vit_b_16
+
+Epoch : 51   Training Accuracy : 0.9921237230300903
+Epoch : 52   Training Accuracy : 0.9921237230300903
+Epoch : 53   Training Accuracy : 0.9912645220756531
+Epoch : 54   Training Accuracy : 0.9915509223937988
+Epoch : 55   Training Accuracy : 0.9919328093528748
+Epoch : 55   Validation Accuracy : 0.9902634620666504
+Epoch : 55   Validation Accuracy : 0.9871745705604553
+Saving the model at checkpoints/vit_b_16
+
+Epoch : 56   Training Accuracy : 0.9914076924324036
+Epoch : 57   Training Accuracy : 0.9921714663505554
+Epoch : 58   Training Accuracy : 0.9920759797096252
+Epoch : 59   Training Accuracy : 0.9908348917961121
+Epoch : 60   Training Accuracy : 0.9925056099891663
+Epoch : 60   Validation Accuracy : 0.9900725483894348
+Epoch : 60   Validation Accuracy : 0.9876234531402588
+Saving the model at checkpoints/vit_b_16
+
+Epoch : 61   Training Accuracy : 0.9919328093528748
+Epoch : 62   Training Accuracy : 0.9911690354347229
+Epoch : 63   Training Accuracy : 0.9920759797096252
+Epoch : 64   Training Accuracy : 0.9917418360710144
+Epoch : 65   Training Accuracy : 0.9918850660324097
+Epoch : 65   Validation Accuracy : 0.9893088936805725
+Epoch : 65   Validation Accuracy : 0.9877517223358154
+Saving the model at checkpoints/vit_b_16
+
+Epoch : 66   Training Accuracy : 0.9913599491119385
+Epoch : 67   Training Accuracy : 0.9911212921142578
+Epoch : 68   Training Accuracy : 0.9911690354347229
+Epoch : 69   Training Accuracy : 0.9919328093528748
+Epoch : 70   Training Accuracy : 0.991646409034729
+Epoch : 70   Validation Accuracy : 0.9900725483894348
+Epoch : 70   Validation Accuracy : 0.9872387051582336
+Saving the model at checkpoints/vit_b_16
+
+Epoch : 71   Training Accuracy : 0.9919805526733398
+Epoch : 72   Training Accuracy : 0.9926965236663818
+Epoch : 73   Training Accuracy : 0.9923146963119507
+Epoch : 74   Training Accuracy : 0.9925056099891663
+Epoch : 75   Training Accuracy : 0.992362380027771
+Epoch : 75   Validation Accuracy : 0.991790771484375
+Epoch : 75   Validation Accuracy : 0.9878799319267273
+Saving the model at checkpoints/vit_b_16
+
+Epoch : 76   Training Accuracy : 0.9918373227119446
+Epoch : 77   Training Accuracy : 0.992362380027771
+Epoch : 78   Training Accuracy : 0.9926010966300964
+Epoch : 79   Training Accuracy : 0.992362380027771
+Epoch : 80   Training Accuracy : 0.9924101233482361
+Epoch : 80   Validation Accuracy : 0.9906452894210815
+Epoch : 80   Validation Accuracy : 0.9875593185424805
+Saving the model at checkpoints/vit_b_16
+
+Epoch : 81   Training Accuracy : 0.9922192096710205
+Epoch : 82   Training Accuracy : 0.9913599491119385
+Epoch : 83   Training Accuracy : 0.9921237230300903
+Epoch : 84   Training Accuracy : 0.9924101233482361
+Epoch : 85   Training Accuracy : 0.991216778755188
+Epoch : 85   Validation Accuracy : 0.9889270663261414
+Epoch : 85   Validation Accuracy : 0.9872387051582336
+Saving the model at checkpoints/vit_b_16
+
+Epoch : 86   Training Accuracy : 0.9923146963119507
+Epoch : 87   Training Accuracy : 0.9925533533096313
+Epoch : 88   Training Accuracy : 0.9925056099891663
+Epoch : 89   Training Accuracy : 0.991646409034729
+Epoch : 90   Training Accuracy : 0.9922192096710205
+Epoch : 90   Validation Accuracy : 0.9898816347122192
+Epoch : 90   Validation Accuracy : 0.9874951839447021
+Saving the model at checkpoints/vit_b_16
+
+Epoch : 91   Training Accuracy : 0.9916940927505493
+Epoch : 92   Training Accuracy : 0.9924101233482361
+Epoch : 93   Training Accuracy : 0.9918373227119446
+Epoch : 94   Training Accuracy : 0.9921714663505554
+Epoch : 95   Training Accuracy : 0.9924578666687012
+Epoch : 95   Validation Accuracy : 0.9906452894210815
+Epoch : 95   Validation Accuracy : 0.9874951839447021
+Saving the model at checkpoints/vit_b_16
+
+Epoch : 96   Training Accuracy : 0.9917895793914795
+Epoch : 97   Training Accuracy : 0.991216778755188
+Epoch : 98   Training Accuracy : 0.992362380027771
+Epoch : 99   Training Accuracy : 0.9921714663505554
+Epoch : 100   Training Accuracy : 0.9927442669868469
+Epoch : 100   Validation Accuracy : 0.9900725483894348
+Epoch : 100   Validation Accuracy : 0.9874951839447021
+Saving the model at checkpoints/vit_b_16
+

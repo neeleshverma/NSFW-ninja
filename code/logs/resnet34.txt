@@ -1,0 +1,181 @@
+############# TRAINING ################
+Epoch : 1   Training Accuracy : 0.9446246027946472
+Epoch : 2   Training Accuracy : 0.9732900857925415
+Epoch : 3   Training Accuracy : 0.9792998433113098
+Epoch : 4   Training Accuracy : 0.98292475938797
+Epoch : 5   Training Accuracy : 0.9867404103279114
+Epoch : 5   Validation Accuracy : 0.9584128260612488
+Epoch : 5   Test Accuracy : 0.9410029649734497
+Saving the model at checkpoints/resnet34
+
+Epoch : 6   Training Accuracy : 0.9877420663833618
+Epoch : 7   Training Accuracy : 0.9884098172187805
+Epoch : 8   Training Accuracy : 0.9896976351737976
+Epoch : 9   Training Accuracy : 0.9922255277633667
+Epoch : 10   Training Accuracy : 0.9925593733787537
+Epoch : 10   Validation Accuracy : 0.9755818247795105
+Epoch : 10   Test Accuracy : 0.9570347666740417
+Saving the model at checkpoints/resnet34
+
+Epoch : 11   Training Accuracy : 0.9926548004150391
+Epoch : 12   Training Accuracy : 0.9941333532333374
+Epoch : 13   Training Accuracy : 0.9953734874725342
+Epoch : 14   Training Accuracy : 0.9953257441520691
+Epoch : 15   Training Accuracy : 0.9953257441520691
+Epoch : 15   Validation Accuracy : 0.982449471950531
+Epoch : 15   Test Accuracy : 0.9796075224876404
+Saving the model at checkpoints/resnet34
+
+Epoch : 16   Training Accuracy : 0.9948487877845764
+Epoch : 17   Training Accuracy : 0.9957073330879211
+Epoch : 18   Training Accuracy : 0.9951350092887878
+Epoch : 19   Training Accuracy : 0.9960412383079529
+Epoch : 20   Training Accuracy : 0.9967566728591919
+Epoch : 20   Validation Accuracy : 0.8971766233444214
+Epoch : 20   Test Accuracy : 0.8809798359870911
+Saving the model at checkpoints/resnet34
+
+Epoch : 21   Training Accuracy : 0.9979013800621033
+Epoch : 22   Training Accuracy : 0.9990460872650146
+Epoch : 23   Training Accuracy : 0.9986644983291626
+Epoch : 24   Training Accuracy : 0.9989029765129089
+Epoch : 25   Training Accuracy : 0.9992368817329407
+Epoch : 25   Validation Accuracy : 0.9965661764144897
+Epoch : 25   Test Accuracy : 0.9969218969345093
+Saving the model at checkpoints/resnet34
+
+Epoch : 26   Training Accuracy : 0.9988076090812683
+Epoch : 27   Training Accuracy : 0.9991891384124756
+Epoch : 28   Training Accuracy : 0.9991414546966553
+Epoch : 29   Training Accuracy : 0.999093770980835
+Epoch : 30   Training Accuracy : 0.9994276165962219
+Epoch : 30   Validation Accuracy : 0.9965661764144897
+Epoch : 30   Test Accuracy : 0.9966012835502625
+Saving the model at checkpoints/resnet34
+
+Epoch : 31   Training Accuracy : 0.999284565448761
+Epoch : 32   Training Accuracy : 0.999284565448761
+Epoch : 33   Training Accuracy : 0.9990460872650146
+Epoch : 34   Training Accuracy : 0.9991891384124756
+Epoch : 35   Training Accuracy : 0.999618411064148
+Epoch : 35   Validation Accuracy : 0.997138500213623
+Epoch : 35   Test Accuracy : 0.9965371489524841
+Saving the model at checkpoints/resnet34
+
+Epoch : 36   Training Accuracy : 0.9993322491645813
+Epoch : 37   Training Accuracy : 0.9991891384124756
+Epoch : 38   Training Accuracy : 0.9992368817329407
+Epoch : 39   Training Accuracy : 0.9995230436325073
+Epoch : 40   Training Accuracy : 0.9992368817329407
+Epoch : 40   Validation Accuracy : 0.9963754415512085
+Epoch : 40   Test Accuracy : 0.9967936277389526
+Saving the model at checkpoints/resnet34
+
+Epoch : 41   Training Accuracy : 0.9994276165962219
+Epoch : 42   Training Accuracy : 0.9993799328804016
+Epoch : 43   Training Accuracy : 0.9995707273483276
+Epoch : 44   Training Accuracy : 0.9993799328804016
+Epoch : 45   Training Accuracy : 0.999666154384613
+Epoch : 45   Validation Accuracy : 0.9967569708824158
+Epoch : 45   Test Accuracy : 0.9966012835502625
+Saving the model at checkpoints/resnet34
+
+Epoch : 46   Training Accuracy : 0.9993322491645813
+Epoch : 47   Training Accuracy : 0.9995707273483276
+Epoch : 48   Training Accuracy : 0.9995230436325073
+Epoch : 49   Training Accuracy : 0.9991891384124756
+Epoch : 50   Training Accuracy : 0.999284565448761
+Epoch : 50   Validation Accuracy : 0.9967569708824158
+Epoch : 50   Test Accuracy : 0.9966012835502625
+Saving the model at checkpoints/resnet34
+
+Epoch : 51   Training Accuracy : 0.999475359916687
+Epoch : 52   Training Accuracy : 0.9995230436325073
+Epoch : 53   Training Accuracy : 0.999284565448761
+Epoch : 54   Training Accuracy : 0.9995707273483276
+Epoch : 55   Training Accuracy : 0.9993322491645813
+Epoch : 55   Validation Accuracy : 0.9967569708824158
+Epoch : 55   Test Accuracy : 0.9967936277389526
+Saving the model at checkpoints/resnet34
+
+Epoch : 56   Training Accuracy : 0.9995230436325073
+Epoch : 57   Training Accuracy : 0.9995230436325073
+Epoch : 58   Training Accuracy : 0.9995230436325073
+Epoch : 59   Training Accuracy : 0.999475359916687
+Epoch : 60   Training Accuracy : 0.9994276165962219
+Epoch : 60   Validation Accuracy : 0.9965661764144897
+Epoch : 60   Test Accuracy : 0.9964730143547058
+Saving the model at checkpoints/resnet34
+
+Epoch : 61   Training Accuracy : 0.9995230436325073
+Epoch : 62   Training Accuracy : 0.9995230436325073
+Epoch : 63   Training Accuracy : 0.9997138381004333
+Epoch : 64   Training Accuracy : 0.9995230436325073
+Epoch : 65   Training Accuracy : 0.999475359916687
+Epoch : 65   Validation Accuracy : 0.9977108240127563
+Epoch : 65   Test Accuracy : 0.9967294931411743
+Saving the model at checkpoints/resnet34
+
+Epoch : 66   Training Accuracy : 0.9995707273483276
+Epoch : 67   Training Accuracy : 0.999666154384613
+Epoch : 68   Training Accuracy : 0.999284565448761
+Epoch : 69   Training Accuracy : 0.999284565448761
+Epoch : 70   Training Accuracy : 0.9995707273483276
+Epoch : 70   Validation Accuracy : 0.9965661764144897
+Epoch : 70   Test Accuracy : 0.9970501661300659
+Saving the model at checkpoints/resnet34
+
+Epoch : 71   Training Accuracy : 0.9993322491645813
+Epoch : 72   Training Accuracy : 0.9995230436325073
+Epoch : 73   Training Accuracy : 0.9994276165962219
+Epoch : 74   Training Accuracy : 0.999618411064148
+Epoch : 75   Training Accuracy : 0.9993322491645813
+Epoch : 75   Validation Accuracy : 0.9979015588760376
+Epoch : 75   Test Accuracy : 0.996665358543396
+Saving the model at checkpoints/resnet34
+
+Epoch : 76   Training Accuracy : 0.9993799328804016
+Epoch : 77   Training Accuracy : 0.9995230436325073
+Epoch : 78   Training Accuracy : 0.9995230436325073
+Epoch : 79   Training Accuracy : 0.999284565448761
+Epoch : 80   Training Accuracy : 0.9993799328804016
+Epoch : 80   Validation Accuracy : 0.9963754415512085
+Epoch : 80   Test Accuracy : 0.9969860315322876
+Saving the model at checkpoints/resnet34
+
+Epoch : 81   Training Accuracy : 0.9993799328804016
+Epoch : 82   Training Accuracy : 0.9995707273483276
+Epoch : 83   Training Accuracy : 0.9995707273483276
+Epoch : 84   Training Accuracy : 0.9994276165962219
+Epoch : 85   Training Accuracy : 0.9993322491645813
+Epoch : 85   Validation Accuracy : 0.996947705745697
+Epoch : 85   Test Accuracy : 0.9964730143547058
+Saving the model at checkpoints/resnet34
+
+Epoch : 86   Training Accuracy : 0.9995707273483276
+Epoch : 87   Training Accuracy : 0.9993799328804016
+Epoch : 88   Training Accuracy : 0.999475359916687
+Epoch : 89   Training Accuracy : 0.999475359916687
+Epoch : 90   Training Accuracy : 0.999666154384613
+Epoch : 90   Validation Accuracy : 0.9963754415512085
+Epoch : 90   Test Accuracy : 0.996857762336731
+Saving the model at checkpoints/resnet34
+
+Epoch : 91   Training Accuracy : 0.999475359916687
+Epoch : 92   Training Accuracy : 0.999618411064148
+Epoch : 93   Training Accuracy : 0.999618411064148
+Epoch : 94   Training Accuracy : 0.9995230436325073
+Epoch : 95   Training Accuracy : 0.999666154384613
+Epoch : 95   Validation Accuracy : 0.9965661764144897
+Epoch : 95   Test Accuracy : 0.9969860315322876
+Saving the model at checkpoints/resnet34
+
+Epoch : 96   Training Accuracy : 0.9993799328804016
+Epoch : 97   Training Accuracy : 0.9994276165962219
+Epoch : 98   Training Accuracy : 0.999284565448761
+Epoch : 99   Training Accuracy : 0.9993799328804016
+Epoch : 100   Training Accuracy : 0.9991891384124756
+Epoch : 100   Validation Accuracy : 0.9965661764144897
+Epoch : 100   Test Accuracy : 0.9970501661300659
+Saving the model at checkpoints/resnet34
+
