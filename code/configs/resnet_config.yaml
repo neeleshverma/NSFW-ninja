@@ -30,4 +30,4 @@ test_only: False
 
 #For test only
 model_path: checkpoints/{model}/model_100.pth
-logfile: CandW/cw_resnet.txt
+logfile: /home/neelesh/NSFW-ninja/code/logs/{model}.txt

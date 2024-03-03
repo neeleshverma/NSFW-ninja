@@ -24,11 +24,8 @@ def train_epoch(model, criterion, optimizer, train_data_loader, current_epoch, a
 
     for i, (image, target) in enumerate(train_data_loader):
         image, target = image.to(devices[0]), target.to(devices[0])
-        target = target.type(torch.float)
-        
-        output = model(image)
-        output = output.squeeze()
 
+        output = model(image)
         loss = criterion(output, target)
 
         training_loss += loss.item()
@@ -37,7 +34,7 @@ def train_epoch(model, criterion, optimizer, train_data_loader, current_epoch, a
         loss.backward()
         optimizer.step()
 
-        y_pred = torch.round(torch.sigmoid(output))
+        _, y_pred = torch.max(output, dim=1)
         correct_preds += torch.sum(y_pred == target).cpu()
     
     acc = correct_preds.cpu() / epoch_data_len
@@ -63,15 +60,12 @@ def validate(model, criterion, val_data_loader, current_epoch, val_or_test="Vali
     with torch.no_grad():
         for i, (image, target) in enumerate(val_data_loader): 
             image, target = image.to(devices[0]), target.to(devices[0])
-            target = target.type(torch.float)
             
             output = model(image)
-            output = output.squeeze()
-
             loss = criterion(output, target)
 
             validation_loss += loss.item()
-            y_pred = torch.round(torch.sigmoid(output))
+            _, y_pred = torch.max(output, dim=1)
             correct_preds += torch.sum(y_pred == target).cpu()
     
     acc = correct_preds / len(val_data_loader.dataset)
@@ -101,20 +95,14 @@ def train(args):
 
     model = torchvision.models.__dict__[args['model']](weights=None)
     num_ftrs = model.fc.in_features
-    model.fc = nn.Linear(num_ftrs, 1)
+    model.fc = nn.Linear(num_ftrs, 2)
 
     model.to(devices[0])
     model = nn.DataParallel(model, device_ids=devices)
 
-    criterion = nn.BCEWithLogitsLoss()
+    criterion = nn.CrossEntropyLoss()
     optimizer = torch.optim.SGD(model.parameters(), lr=args['lr'], momentum=args['momentum'], weight_decay=args['weight_decay'])
     lr_scheduler = torch.optim.lr_scheduler.MultiStepLR(optimizer, milestones=args['optim_milestones'], gamma=args['lr_gamma'])
-
-    if args['resume']:
-        checkpoint = torch.load(args['model_path'])
-        model.load_state_dict(checkpoint['model'])
-        optimizer.load_state_dict(checkpoint['optimizer'])
-        lr_scheduler.load_state_dict(checkpoint['lr_scheduler'])
 
     # Training
     train_acc_list = []
@@ -137,7 +125,6 @@ def train(args):
 
             test_acc = validate(model, criterion, test_data_loader, epoch, val_or_test="Test")
             test_acc_list.append(test_acc)
-            # if acc > val_acc:
             save_model(model, optimizer, lr_scheduler, args, epoch)
     
     classifier_utils.plot(train_epochs_list, train_acc_list, "Epochs", "Accuracy",
@@ -152,7 +139,7 @@ if __name__ == "__main__":
     with open('configs/resnet_config.yaml') as f:
         config = yaml.safe_load(f)
 
-    model = sys.argv[1]
+    model = config['model']
 
     config['checkpoints'] = config['checkpoints'].format(model=model)
     config['plots'] = config['plots'].format(model=model)
