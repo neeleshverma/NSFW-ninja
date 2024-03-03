@@ -1,0 +1,181 @@
+############# TRAINING ################
+Epoch : 1   Training Accuracy : 0.5795099139213562
+Epoch : 2   Training Accuracy : 0.6653331518173218
+Epoch : 3   Training Accuracy : 0.7157144546508789
+Epoch : 4   Training Accuracy : 0.7532816529273987
+Epoch : 5   Training Accuracy : 0.7735967040061951
+Epoch : 5   Validation Accuracy : 0.7670000195503235
+Epoch : 5   Test Accuracy : 0.7802000045776367
+Saving the model at /home/neelesh/research-project-security-sheriffs/code/checkpoints/resnet34
+
+Epoch : 6   Training Accuracy : 0.7985998392105103
+Epoch : 7   Training Accuracy : 0.8147268295288086
+Epoch : 8   Training Accuracy : 0.8250406384468079
+Epoch : 9   Training Accuracy : 0.8442930579185486
+Epoch : 10   Training Accuracy : 0.8548568487167358
+Epoch : 10   Validation Accuracy : 0.8169999718666077
+Epoch : 10   Test Accuracy : 0.8352000117301941
+Saving the model at /home/neelesh/research-project-security-sheriffs/code/checkpoints/resnet34
+
+Epoch : 11   Training Accuracy : 0.8695461750030518
+Epoch : 12   Training Accuracy : 0.8815476894378662
+Epoch : 13   Training Accuracy : 0.8882360458374023
+Epoch : 14   Training Accuracy : 0.8923615217208862
+Epoch : 15   Training Accuracy : 0.8994249105453491
+Epoch : 15   Validation Accuracy : 0.8967499732971191
+Epoch : 15   Test Accuracy : 0.9103999733924866
+Saving the model at /home/neelesh/research-project-security-sheriffs/code/checkpoints/resnet34
+
+Epoch : 16   Training Accuracy : 0.9099262356758118
+Epoch : 17   Training Accuracy : 0.9157394766807556
+Epoch : 18   Training Accuracy : 0.9187398552894592
+Epoch : 19   Training Accuracy : 0.9207400679588318
+Epoch : 20   Training Accuracy : 0.923427939414978
+Epoch : 20   Validation Accuracy : 0.9114999771118164
+Epoch : 20   Test Accuracy : 0.9301999807357788
+Saving the model at /home/neelesh/research-project-security-sheriffs/code/checkpoints/resnet34
+
+Epoch : 21   Training Accuracy : 0.9431179165840149
+Epoch : 22   Training Accuracy : 0.9484935402870178
+Epoch : 23   Training Accuracy : 0.9533066749572754
+Epoch : 24   Training Accuracy : 0.9530566334724426
+Epoch : 25   Training Accuracy : 0.951869010925293
+Epoch : 25   Validation Accuracy : 0.9367499947547913
+Epoch : 25   Test Accuracy : 0.9458000063896179
+Saving the model at /home/neelesh/research-project-security-sheriffs/code/checkpoints/resnet34
+
+Epoch : 26   Training Accuracy : 0.9516189694404602
+Epoch : 27   Training Accuracy : 0.9539317488670349
+Epoch : 28   Training Accuracy : 0.9549318552017212
+Epoch : 29   Training Accuracy : 0.9596824645996094
+Epoch : 30   Training Accuracy : 0.9570571184158325
+Epoch : 30   Validation Accuracy : 0.937250018119812
+Epoch : 30   Test Accuracy : 0.9484000205993652
+Saving the model at /home/neelesh/research-project-security-sheriffs/code/checkpoints/resnet34
+
+Epoch : 31   Training Accuracy : 0.9564945697784424
+Epoch : 32   Training Accuracy : 0.9569946527481079
+Epoch : 33   Training Accuracy : 0.9589323401451111
+Epoch : 34   Training Accuracy : 0.9601825475692749
+Epoch : 35   Training Accuracy : 0.9597449898719788
+Epoch : 35   Validation Accuracy : 0.9399999976158142
+Epoch : 35   Test Accuracy : 0.948199987411499
+Saving the model at /home/neelesh/research-project-security-sheriffs/code/checkpoints/resnet34
+
+Epoch : 36   Training Accuracy : 0.9609326124191284
+Epoch : 37   Training Accuracy : 0.9606825709342957
+Epoch : 38   Training Accuracy : 0.9584947824478149
+Epoch : 39   Training Accuracy : 0.9597449898719788
+Epoch : 40   Training Accuracy : 0.9612451791763306
+Epoch : 40   Validation Accuracy : 0.940750002861023
+Epoch : 40   Test Accuracy : 0.949400007724762
+Saving the model at /home/neelesh/research-project-security-sheriffs/code/checkpoints/resnet34
+
+Epoch : 41   Training Accuracy : 0.9641830325126648
+Epoch : 42   Training Accuracy : 0.9673084020614624
+Epoch : 43   Training Accuracy : 0.9648081064224243
+Epoch : 44   Training Accuracy : 0.9649956226348877
+Epoch : 45   Training Accuracy : 0.9645580649375916
+Epoch : 45   Validation Accuracy : 0.940500020980835
+Epoch : 45   Test Accuracy : 0.9498000144958496
+Saving the model at /home/neelesh/research-project-security-sheriffs/code/checkpoints/resnet34
+
+Epoch : 46   Training Accuracy : 0.967245876789093
+Epoch : 47   Training Accuracy : 0.9619952440261841
+Epoch : 48   Training Accuracy : 0.9654331803321838
+Epoch : 49   Training Accuracy : 0.9654957056045532
+Epoch : 50   Training Accuracy : 0.967245876789093
+Epoch : 50   Validation Accuracy : 0.9397500157356262
+Epoch : 50   Test Accuracy : 0.949999988079071
+Saving the model at /home/neelesh/research-project-security-sheriffs/code/checkpoints/resnet34
+
+Epoch : 51   Training Accuracy : 0.9665583372116089
+Epoch : 52   Training Accuracy : 0.9658082127571106
+Epoch : 53   Training Accuracy : 0.9669333696365356
+Epoch : 54   Training Accuracy : 0.9674959182739258
+Epoch : 55   Training Accuracy : 0.9674334526062012
+Epoch : 55   Validation Accuracy : 0.9415000081062317
+Epoch : 55   Test Accuracy : 0.9517999887466431
+Saving the model at /home/neelesh/research-project-security-sheriffs/code/checkpoints/resnet34
+
+Epoch : 56   Training Accuracy : 0.9661832451820374
+Epoch : 57   Training Accuracy : 0.9666208028793335
+Epoch : 58   Training Accuracy : 0.968933641910553
+Epoch : 59   Training Accuracy : 0.9664958119392395
+Epoch : 60   Training Accuracy : 0.9661207795143127
+Epoch : 60   Validation Accuracy : 0.9417499899864197
+Epoch : 60   Test Accuracy : 0.949999988079071
+Saving the model at /home/neelesh/research-project-security-sheriffs/code/checkpoints/resnet34
+
+Epoch : 61   Training Accuracy : 0.9644330739974976
+Epoch : 62   Training Accuracy : 0.9664958119392395
+Epoch : 63   Training Accuracy : 0.9662457704544067
+Epoch : 64   Training Accuracy : 0.9675584435462952
+Epoch : 65   Training Accuracy : 0.96587073802948
+Epoch : 65   Validation Accuracy : 0.9432500004768372
+Epoch : 65   Test Accuracy : 0.9495999813079834
+Saving the model at /home/neelesh/research-project-security-sheriffs/code/checkpoints/resnet34
+
+Epoch : 66   Training Accuracy : 0.966995894908905
+Epoch : 67   Training Accuracy : 0.9663708209991455
+Epoch : 68   Training Accuracy : 0.967120885848999
+Epoch : 69   Training Accuracy : 0.9686836004257202
+Epoch : 70   Training Accuracy : 0.9661207795143127
+Epoch : 70   Validation Accuracy : 0.9362499713897705
+Epoch : 70   Test Accuracy : 0.9502000212669373
+Saving the model at /home/neelesh/research-project-security-sheriffs/code/checkpoints/resnet34
+
+Epoch : 71   Training Accuracy : 0.9678084850311279
+Epoch : 72   Training Accuracy : 0.9668708443641663
+Epoch : 73   Training Accuracy : 0.968933641910553
+Epoch : 74   Training Accuracy : 0.9679334759712219
+Epoch : 75   Training Accuracy : 0.9678710103034973
+Epoch : 75   Validation Accuracy : 0.9442499876022339
+Epoch : 75   Test Accuracy : 0.9495999813079834
+Saving the model at /home/neelesh/research-project-security-sheriffs/code/checkpoints/resnet34
+
+Epoch : 76   Training Accuracy : 0.9671834111213684
+Epoch : 77   Training Accuracy : 0.9689961075782776
+Epoch : 78   Training Accuracy : 0.9670583605766296
+Epoch : 79   Training Accuracy : 0.9686836004257202
+Epoch : 80   Training Accuracy : 0.9691211581230164
+Epoch : 80   Validation Accuracy : 0.9427499771118164
+Epoch : 80   Test Accuracy : 0.9491999745368958
+Saving the model at /home/neelesh/research-project-security-sheriffs/code/checkpoints/resnet34
+
+Epoch : 81   Training Accuracy : 0.9668083786964417
+Epoch : 82   Training Accuracy : 0.9663082957267761
+Epoch : 83   Training Accuracy : 0.9693086743354797
+Epoch : 84   Training Accuracy : 0.9678710103034973
+Epoch : 85   Training Accuracy : 0.9679960012435913
+Epoch : 85   Validation Accuracy : 0.9455000162124634
+Epoch : 85   Test Accuracy : 0.9516000151634216
+Saving the model at /home/neelesh/research-project-security-sheriffs/code/checkpoints/resnet34
+
+Epoch : 86   Training Accuracy : 0.969058632850647
+Epoch : 87   Training Accuracy : 0.9669333696365356
+Epoch : 88   Training Accuracy : 0.9670583605766296
+Epoch : 89   Training Accuracy : 0.9668083786964417
+Epoch : 90   Training Accuracy : 0.9661207795143127
+Epoch : 90   Validation Accuracy : 0.9440000057220459
+Epoch : 90   Test Accuracy : 0.9520000219345093
+Saving the model at /home/neelesh/research-project-security-sheriffs/code/checkpoints/resnet34
+
+Epoch : 91   Training Accuracy : 0.9677459597587585
+Epoch : 92   Training Accuracy : 0.9676209688186646
+Epoch : 93   Training Accuracy : 0.9679334759712219
+Epoch : 94   Training Accuracy : 0.9662457704544067
+Epoch : 95   Training Accuracy : 0.9687460660934448
+Epoch : 95   Validation Accuracy : 0.9412500262260437
+Epoch : 95   Test Accuracy : 0.9517999887466431
+Saving the model at /home/neelesh/research-project-security-sheriffs/code/checkpoints/resnet34
+
+Epoch : 96   Training Accuracy : 0.9680585265159607
+Epoch : 97   Training Accuracy : 0.9674334526062012
+Epoch : 98   Training Accuracy : 0.9680585265159607
+Epoch : 99   Training Accuracy : 0.9686836004257202
+Epoch : 100   Training Accuracy : 0.9648706316947937
+Epoch : 100   Validation Accuracy : 0.9357500076293945
+Epoch : 100   Test Accuracy : 0.9521999955177307
+Saving the model at /home/neelesh/research-project-security-sheriffs/code/checkpoints/resnet34
+
