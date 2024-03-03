@@ -1,12 +1,12 @@
 # Dataset
-train_dir: /home/neelesh/research-project-security-sheriffs/dataset/train
-val_dir: /home/neelesh/research-project-security-sheriffs/dataset/val
-test_dir: /home/neelesh/research-project-security-sheriffs/dataset/test
+train_dir: /home/neelesh/research-project-security-sheriffs/dataset/cats_dogs_dataset/train
+val_dir: /home/neelesh/research-project-security-sheriffs/dataset/cats_dogs_dataset/val
+test_dir: /home/neelesh/research-project-security-sheriffs/dataset/cats_dogs_dataset/test
 
 # Model
 base: resnet
-# model: resnet101
-model: {model}
+model: resnet34
+# model: {model}
 batch_size: 128
 epochs: 100
 lr: 0.01
@@ -23,8 +23,8 @@ pin_memory: True
 # Debug
 print_freq: 1
 eval_freq: 5
-checkpoints: checkpoints/{model}
-plots: plots/{model}
+checkpoints: /home/neelesh/research-project-security-sheriffs/code/checkpoints/{model}
+plots: /home/neelesh/NSFW-ninja/code/plots/{model}
 resume: False
 test_only: False
 
