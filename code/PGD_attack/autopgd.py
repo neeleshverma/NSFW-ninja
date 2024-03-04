@@ -46,7 +46,7 @@ def getARTClassifier(model, config):
     return classifier
 
 if __name__ == "__main__":
-    with open('/home/neelesh/research-project-security-sheriffs/code/Cats_Dogs/resnet_config.yaml') as f:
+    with open('/home/neelesh/research-project-security-sheriffs/code/configs/resnet_config.yaml') as f:
         config = yaml.safe_load(f)
 
     # config['model'] = sys.argv[1]
