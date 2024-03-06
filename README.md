@@ -5,7 +5,7 @@ This project explores and exploits the content moderation filters on social medi
 Final Report - [here](https://github.com/neeleshverma/NSFW-ninja/blob/master/final-report/CSE509_FinalReport.pdf)  
 Code is currently being updated.   
 
-### Training Helper Models
+### 1. Training Helper Models
 Currently, we are using 3 types of models - Resnets (34, 50), Inception-v3, and ViT. To train on a new dataset, simply modify ``configs/resnet_configs.yaml`` or make a new yaml file (need to change it in the code as well).
 ```
 $ cd code
@@ -13,13 +13,13 @@ $ python resnet_train.py
 ```
 Feel free to change/tune the hyper-parameters in the config file.  
 
-### Running Grad-CAM attack
+### 2. Running Grad-CAM attack
 ```
 $ python grad_cam_attack.py
 ```
 We are using Gaussian noises, so the parameters of the Gaussian can be fine-tuned in this Python file.
 
-### Comparison with PGD, Auto-PGD, and C&W attack
+### 3. Comparison with PGD, Auto-PGD, and C&W attack
 We have also implemented PGD, Auto-PGD, and C&W attacks using the [ART](https://adversarial-robustness-toolbox.readthedocs.io/) library. They can be run as (for resnet) -
 ```
 $ python PGD_attack/pgd_resnet.py
