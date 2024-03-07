@@ -11,14 +11,14 @@ import torchvision
 import torch.nn as nn
 import imageio
 
-devices = [torch.device("cuda" if torch.cuda.is_available() else "cpu")]
+devices = None
 
 from art.attacks.evasion import ProjectedGradientDescentPyTorch
 
 def getResnetModel(modelpath, modeltype):
     model = torchvision.models.__dict__[modeltype](weights=None)
     num_ftrs = model.fc.in_features
-    model.fc = nn.Linear(num_ftrs, 1)
+    model.fc = nn.Linear(num_ftrs, 2)
     model.to(devices[0])
     model = nn.DataParallel(model, device_ids=devices)
 
@@ -46,9 +46,10 @@ def getARTClassifier(model, config):
     return classifier
 
 if __name__ == "__main__":
-    with open('/home/neelesh/research-project-security-sheriffs/code/configs/resnet_config.yaml') as f:
+    with open('/home/neelesh/NSFW-ninja/code/configs/resnet_config.yaml') as f:
         config = yaml.safe_load(f)
-
+    devices = [torch.device(f"cuda:{id}") for id in config['gpus']]
+    print(devices)
     # config['model'] = sys.argv[1]
 
     config['model_path'] = config['model_path'].format(model=config['model'])
@@ -74,19 +75,18 @@ if __name__ == "__main__":
     total_images = 0
 
     # AutoAttack
-    attack = AutoAttack(model, norm='Linf', eps=30/255, version='standard', verbose=True)
+    attack = AutoAttack(model, norm='Linf', eps=8/255, version='standard', verbose=True)
     l_inf_max = 0
 
     for i, (image, target) in tqdm(enumerate(test_data_loader)):
-        if i == 10:
-            break
         print("Batch : ", i)
         print("Total images : ", total_images)
         total_images += target.shape[0]
         print("Total images : ", total_images)
 
         x_test = image.clone().numpy()
-        target = target.type(torch.float)
+        # target = target.type(torch.float)
+        # print("Target : ", target)
 
         ### Normal output
         device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
@@ -96,14 +96,13 @@ if __name__ == "__main__":
         # print(normal_outputs, normal_outputs.shape)
         # print(target, target.shape)
         normal_outputs = normal_outputs.squeeze()        
-        normal_preds = torch.round(torch.sigmoid(normal_outputs))
+        # normal_preds = torch.round(torch.sigmoid(normal_outputs))
+        _, normal_preds = torch.max(normal_outputs, dim=1)
         target = target.to(device) 
         # print(normal_preds, target)
+        print(normal_preds.shape, target.shape)
         normal_acc += torch.sum(normal_preds == target)
         print("Normal acc : ", normal_acc * 100.0 / total_images)
-
-
-
 
         ### Adversarial generation and output
         x_test_tensor = torch.from_numpy(x_test).to(device)
@@ -112,13 +111,15 @@ if __name__ == "__main__":
         attack.set_version('rand')
         x_test_adv = attack.run_standard_evaluation(x_test_tensor, target,bs=128)        
         # save the adversarial images
-        for j in range(x_test_adv.shape[0]):
-            img = x_test_adv[j].cpu().numpy().transpose(1, 2, 0)
-            img = (img * 255).astype(np.uint8)
-            imageio.imsave('/home/neelesh/NSFW-ninja/adv_images/'+str(i)+'_'+str(j)+'.png', img)
+        # for j in range(x_test_adv.shape[0]):
+            # img = x_test_adv[j].cpu().numpy().transpose(1, 2, 0)
+            # img = (img * 255).astype(np.uint8)
+            # imageio.imsave('/home/neelesh/NSFW-ninja/adv_images/'+str(i)+'_'+str(j)+'.png', img)
         adv_outputs = model(x_test_adv)
         adv_outputs = adv_outputs.squeeze()
-        adv_preds = torch.round(torch.sigmoid(adv_outputs))
+        # adv_preds = torch.round(torch.sigmoid(adv_outputs))
+        _, adv_preds = torch.max(adv_outputs, dim=1)
+
         adv_acc += torch.sum(adv_preds == target)
         print("Adversarial acc : ", adv_acc * 100.0 / total_images)
 
@@ -132,6 +133,7 @@ if __name__ == "__main__":
 
     ### Logging
     log = "Model : {}\n".format(config['model'])
+    log += "AutoAttack Lib\n"
     log += "Normal acc : {}\n".format(normal_acc * 100.0 /
                                         total_images)
     log += "Adversarial acc : {}\n".format(adv_acc * 100.0 /
