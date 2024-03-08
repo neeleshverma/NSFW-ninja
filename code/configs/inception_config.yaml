@@ -1,19 +1,19 @@
 # Dataset
-train_dir: /home/neelesh/research-project-security-sheriffs/dataset/train
-val_dir: /home/neelesh/research-project-security-sheriffs/dataset/val
-test_dir: /home/neelesh/research-project-security-sheriffs/dataset/test
+train_dir: /home/neelesh/research-project-security-sheriffs/dataset/cats_dogs_dataset/train
+val_dir: /home/neelesh/research-project-security-sheriffs/dataset/cats_dogs_dataset/val
+test_dir: /home/neelesh/research-project-security-sheriffs/dataset/cats_dogs_dataset/test
 
 # Model
 base: inception
 model: inception_v3
 batch_size: 128
 epochs: 100
-lr: 0.001
+lr: 0.005
 momentum: 0.9
 weight_decay: 0.0001
 lr_gamma: 0.1
 optim_milestones: [20, 40, 80]
-gpus: [0,1,2]
+gpus: [0,1]
 
 # Opt
 num_workers: 16
@@ -22,11 +22,11 @@ pin_memory: True
 # Debug
 print_freq: 1
 eval_freq: 5
-checkpoints: checkpoints/inception_v3
-plots: plots/inception_v3
+checkpoints: /home/neelesh/research-project-security-sheriffs/code/checkpoints/{model}
+plots: /home/neelesh/NSFW-ninja/code/plots/{model}
 resume: False
 test_only: False
 
 #For test only
-model_path: checkpoints/inception_v3/model_100.pth
-logfile: CandW/cw_inception.txt
+model_path: /home/neelesh/research-project-security-sheriffs/code/checkpoints/{model}/model_100.pth
+logfile: /home/neelesh/NSFW-ninja/code/logs/auto_pgd/inception.txt

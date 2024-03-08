@@ -6,7 +6,6 @@ test_dir: /home/neelesh/research-project-security-sheriffs/dataset/cats_dogs_dat
 # Model
 base: resnet
 model: resnet50
-# model: {model}
 batch_size: 128
 epochs: 100
 lr: 0.01
@@ -30,4 +29,4 @@ test_only: False
 
 # For test only
 model_path: /home/neelesh/research-project-security-sheriffs/code/checkpoints/{model}/model_100.pth
-logfile: /home/neelesh/NSFW-ninja/code/logs/{model}.txt
+logfile: /home/neelesh/NSFW-ninja/code/logs/auto_pgd/resnet.txt
