@@ -1,0 +1,8 @@
+Model : inception_v3
+cross_entropy
+Normal acc : 82.62000274658203
+Adversarial acc : 17.3799991607666
+Attack Success Rate : 100.0
+L-inf Norm Max : 0.03137260675430298
+--------------------------------------------------------------
+
